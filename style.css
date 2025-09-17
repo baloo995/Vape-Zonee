@@ -173,3 +173,56 @@ footer {
   padding: 15px;
   margin-top: 30px;
 }
+/* VERSION MOBILE */
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .produit {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .produit img {
+    margin-bottom: 10px;
+    width: 80%;
+  }
+
+  .btn-panier {
+    width: 100%;
+    text-align: center;
+  }
+
+  form {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  table {
+    font-size: 14px;
+    width: 100%;
+    overflow-x: auto;
+    display: block;
+  }
+
+  .total {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .banniere img {
+    max-height: 120px;
+  }
+
+  .carte-produit {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
