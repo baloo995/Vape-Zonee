@@ -1,77 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
-  <title>VapeZone - Accueil</title>
+  <title>VapeZone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="vapezone-logo.png">
 </head>
 <body>
   <header>
     <h1>VapeZone</h1>
-    <nav>
-  <ul>
-    <li><a href="index.html">🏠 Accueil</a></li>
-    <li class="menu-produits">
-      <a href="produits.html">🛍️ Produits</a>
-      <div class="mega-menu">
-        <div class="colonne">
-          <h4>🌀 Cigarettes</h4>
-          <a href="cigarette.html">Voir</a>
-        </div>
-        <div class="colonne">
-          <h4>🍓 Goûts</h4>
-          <a href="gouts.html">Voir</a>
-        </div>
-        <div class="colonne">
-          <h4>📦 Pods</h4>
-          <a href="pods.html">Voir</a>
-        </div>
-        <div class="colonne">
-          <h4>💡 Conseils</h4>
-          <a href="conseils.html">Voir</a>
-        </div>
-      </div>
-    </li>
-    <li><a href="contact.html">📞 Contact</a></li>
-    <li><a href="panier.html">🛒 Panier</a></li>
-    <li><a href="apropos.html">ℹ️ À propos</a></li>
-  </ul>
-</nav>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <nav class="menu-principal">
+      <ul>
+        <li><a href="index.html">🏠 Accueil</a></li>
+        <li class="menu-produits">
+          <a href="produits.html">🛍️ Produits</a>
+          <div class="mega-menu">
+            <div class="colonne"><h4>🌀 Cigarettes</h4><a href="cigarette.html">Voir</a></div>
+            <div class="colonne"><h4>🍓 Goûts</h4><a href="gouts.html">Voir</a></div>
+            <div class="colonne"><h4>📦 Pods</h4><a href="pods.html">Voir</a></div>
+            <div class="colonne"><h4>💡 Conseils</h4><a href="conseils.html">Voir</a></div>
+          </div>
+        </li>
+        <li><a href="contact.html">📞 Contact</a></li>
+        <li><a href="panier.html">🛒 Panier</a></li>
+        <li><a href="apropos.html">ℹ️ À propos</a></li>
+      </ul>
+    </nav>
+    <nav id="mobileMenu">
+      <ul>
+        <li><a href="index.html">🏠 Accueil</a></li>
+        <li>
+          <a href="produits.html">🛍️ Produits</a>
+          <ul class="submenu">
+            <li><a href="cigarette.html">🌀 Cigarettes</a></li>
+            <li><a href="gouts.html">🍓 Goûts</a></li>
+            <li><a href="pods.html">📦 Pods</a></li>
+            <li><a href="conseils.html">💡 Conseils</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">📞 Contact</a></li>
+        <li><a href="panier.html">🛒 Panier</a></li>
+        <li><a href="apropos.html">ℹ️ À propos</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
-    <section class="banniere">
-      <img src="bannière pour site w.png" alt="Bannière VapeZone">
-    </section>
-
-    <section class="intro">
-      <h2>Bienvenue chez VapeZone 🎉</h2>
-      <p>Explorez l’univers de la vape avec style, saveur et innovation. Nos produits sont sélectionnés pour tous les profils : débutants, experts, curieux.</p>
-      <section class="produits-accueil">
-      <h3>Nos coups de cœur 🔥</h3>
-      <div class="carte-produit">
-        <img src="kit vape complet.jpg" alt="Kit Vape">
-        <p>Kit Vape Starter - 29,90€</p>
-        <a href="panier.html" class="btn-panier">Ajouter au panier</a>
-      </div>
-      <div class="carte-produit">
-        <img src="e liquide 7.jpg" alt="E-liquide">
-        <p>E-liquide Fruits Rouges - 4,90€</p>
-        <a href="panier.html" class="btn-panier">Ajouter au panier</a>
-      </div>
-      <div class="carte-produit">
-        <img src="pod vape" alt="Pod Vape">
-        <p>Pod Vape Compact - 19,90€</p>
-        <a href="panier.html" class="btn-panier">Ajouter au panier</a>
-      </div>
-    </section>
+    <h2>Bienvenue sur VapeZone</h2>
+    <p>Site test pour vérifier l'affichage du menu.</p>
   </main>
 
-
-  <footer>
-    <p>&copy; 2025 VapeZone. Vapez avec passion 💨</p>
-  </footer>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.style.display = menu.style.display === "block" ? "none" : "block";
+    }
+  </script>
 </body>
 </html>

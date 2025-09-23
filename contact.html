@@ -8,37 +8,26 @@
 </head>
 <body>
   <header>
-    <h1>VapeZone</h1>
-    <nav>
-  <ul>
-    <li><a href="index.html">🏠 Accueil</a></li>
-    <li class="menu-produits">
-      <a href="produits.html">🛍️ Produits</a>
-      <div class="mega-menu">
-        <div class="colonne">
-          <h4>🌀 Cigarettes</h4>
-          <a href="cigarette.html">Voir</a>
-        </div>
-        <div class="colonne">
-          <h4>🍓 Goûts</h4>
-          <a href="gouts.html">Voir</a>
-        </div>
-        <div class="colonne">
-          <h4>📦 Pods</h4>
-          <a href="pods.html">Voir</a>
-        </div>
-        <div class="colonne">
-          <h4>💡 Conseils</h4>
-          <a href="conseils.html">Voir</a>
-        </div>
-      </div>
-    </li>
-    <li><a href="contact.html">📞 Contact</a></li>
-    <li><a href="panier.html">🛒 Panier</a></li>
-    <li><a href="apropos.html">ℹ️ À propos</a></li>
-  </ul>
-</nav>
-  </header>
+  <h1>VapeZone</h1>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <nav id="mobileMenu">
+    <ul>
+      <li><a href="index.html">🏠 Accueil</a></li>
+      <li class="has-submenu">
+        <a href="produits.html">🛍️ Produits</a>
+        <ul class="submenu">
+          <li><a href="cigarette.html">🌀 Cigarettes</a></li>
+          <li><a href="gouts.html">🍓 Goûts</a></li>
+          <li><a href="pods.html">📦 Pods</a></li>
+          <li><a href="conseils.html">💡 Conseils</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html">📞 Contact</a></li>
+      <li><a href="panier.html">🛒 Panier</a></li>
+      <li><a href="apropos.html">ℹ️ À propos</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <h2 style="text-align:center;">📬 Contactez-nous</h2>
